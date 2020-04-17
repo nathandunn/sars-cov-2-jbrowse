@@ -15,7 +15,7 @@ FROM gmod/jbrowse-buildenv:latest as build
 
 #RUN git clone --single-branch --branch 1.16.8-release https://github.com/GMOD/jbrowse.git
 RUN git clone --single-branch --branch dev https://github.com/GMOD/jbrowse.git
-RUN git clone https://github.com/gmod/sars-cov-2-jbrowse.git 
+RUN git clone https://github.com/gmod/sars-cov-2-jbrowse.git
 RUN git clone https://github.com/bhofmei/jbplugin-screenshot.git
 RUN git clone https://github.com/scottcain/colorbycds.git
 RUN git clone https://github.com/twsaari/FeatureSequence.git
@@ -37,7 +37,7 @@ RUN rm /usr/share/nginx/html/index.html && rm /usr/share/nginx/html/50x.html && 
     cp -r /colorbycds /usr/share/nginx/html/jbrowse/plugins/ColorByCDS && \
     cp -r /FeatureSequence /usr/share/nginx/html/jbrowse/plugins/FeatureSequence && \
     cp -r /mafviewer /usr/share/nginx/html/jbrowse/plugins/MAFViewer && \
-    cp -r /website-genome-browsers/jbrowse/jbrowse/plugins/wormbase-glyphs /usr/share/nginx/html/jbrowse/plugins
+    cp -r /website-genome-browsers/jbrowse/jbrowse/plugins/WormbaseGlyphs /usr/share/nginx/html/jbrowse/plugins
 
 WORKDIR /usr/share/nginx/html/jbrowse
 

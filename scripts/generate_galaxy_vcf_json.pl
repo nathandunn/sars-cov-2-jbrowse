@@ -13,7 +13,7 @@ while (<DATA>) {
     print
     qq{       {
          "category" : "Variants/$loc",
-         "glyph" : "wormbase-glyphs/View/FeatureGlyph/Diamond",
+         "glyph" : "WormbaseGlyphs/View/FeatureGlyph/Diamond",
          "key" : "$id",
          "label" : "$id",
          "maxHeight" : 3000,
